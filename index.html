@@ -4,16 +4,272 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/fontello.css">
+        <style>
+          body {
+            font-family: 'Jost', sans-serif;
+          }
+          .topbar {
+            width: auto;
+            height: 50px;
+            border-bottom: 1px solid rgb(204, 202, 202);
+            margin: none;
+            display: flex;
+            align-items: baseline;
+          }
+          div.logo {
+            width: 100px;
+            height: 40px;
+            text-align: center;
+            padding-top: 10px;
+            padding-right: 10px;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+          }
+
+          p1 {
+            color:  rgb(204, 202, 202);
+            margin-right: 25px;
+            font-size: 12px;
+            width: 55px;
+            font-weight: bold;
+          }
+
+          p2 {
+            color: rgb(52, 171, 250);
+            margin-right: 25px;
+            font-size: 12px;
+            width: 60px;
+            font-weight: bold;
+          }
+
+          nav {
+            display: flex;
+            height: auto;
+            padding-top: 10px;
+            display: flex;
+            margin-right: 800px;
+          }
+
+          div.start {
+            width: 100px;
+            height: 30px;
+            display: flex;
+          }
+
+          i {
+            padding-right: 15px;
+            margin-bottom: 15px;      
+          }
+
+          i.icon-mail {
+            padding-top: 15px;
+          }
+
+          i.icon-user-circle {
+            font-size: 25px;
+            padding-top: 10px;
+            padding-right: 0px;
+          }
+
+          i.icon-down-open {
+            font-size: 10px;
+            padding-top: 20px;
+          }
+
+          .top {
+            height: 70px;
+            width: auto;            
+            display: flex;
+          }
+
+          div.active {
+            height: auto;
+            width: 85%;
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 30px;
+            margin-left: 20px;
+          }
+
+          button.new {
+            height:auto;
+            width: 150px;
+            background-color: rgb(0, 185, 93);
+            border-radius: 10px;
+            border: none;
+            margin-top: 20px;
+            color: white;
+          }
+
+          .about-users {
+            width: auto;
+            margin-left: 40px;
+            margin-top: 30px;
+            display: flex;
+          }
+
+          .basic-info {
+            width: 30%;
+            display: block;
+          }
+
+          div.test {
+            width: 250px;
+            margin-left: 20px;
+            height: 30px;
+            display: flex;
+            margin-top: 20px;
+          }
+
+          div.names-title {
+            width: auto;
+            padding-top: 20px;
+            padding-left: 25px;
+            height: 40px;
+            background-color: rgb(245, 245, 245);
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+          }
+
+          p3 {
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: bold;
+          
+          }
+
+          div.avatars {
+            padding-left: 5px;
+          }
+
+          div.avatars > img {
+            display: flex;
+            padding-bottom: 30px;
+          }
+
+          div.names {
+            height: 150px;
+            display: flex;
+            margin-top: 8px;
+          }
+
+          div.title {
+            width: 190px;
+            padding-top: 20px;
+            padding-left: 40px;
+            height: 40px;
+            background-color: rgb(245, 245, 245);
+          }
+
+          p4 {
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: bold;
+            color:rgb(200, 200, 200)
+          }
+
+          div.usernames {
+            margin-top: 40px;
+          }
+
+          div.emails {
+            margin-top: 40px;
+          }
+
+          div.phones {
+            margin-top: 40px;
+          }
+
+          div.websites-title {
+            width: 150px;
+            padding-top: 20px;
+            padding-left: 35px;
+            height: 40px;
+            background-color: rgb(245, 245, 245);
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+          }
+
+          div.websites {
+            margin-top: 40px;
+          }
+          
+        </style>
+      
     </head>
     <body>
-      <nav></nav>
-      <article>
-        <section>
-          <div class="names"></div>
-          <ul></ul>
-          <div class="emails"></div>
-          <ul></ul>
+      <article class="topbar">
+        <div class = "logo">
+          Patch
+        </div>
+        <nav>
+          <p1>My Home</p1>
+          <p2>Users List</p2>
+          <p1>Applications</p1>
+          <p1>Payments</p1>
+        </nav>
+        <div class = "start">
+          <i class="icon-mail"></i>
+          <i class="icon-user-circle"></i>
+          <i class="icon-down-open"></i>
+        </div>
+      </article>
+      <article class = "top">
+        <div class = "active">Active Users</div>
+        <button class="new">+ Add new User</button>
+      </article>
+      <article class= "about-users">
+        <section class = "basic-info">
+          <div class="names-title"><p3>Names</p3></div>
+          <div class="test">
+            <div class = "avatars">
+            <img src = "logo1.jpg" width="50px" height="50px">
+            <img src = "logo1.jpg" width="50px" height="50px">
+            <img src = "logo1.jpg" width="50px" height="50px">
+            <img src = "logo1.jpg" width="50px" height="50px">
+            <img src = "logo1.jpg" width="50px" height="50px">
+            <img src = "logo1.jpg" width="50px" height="50px">
+            <img src = "logo1.jpg" width="50px" height="50px">
+            <img src = "logo1.jpg" width="50px" height="50px">
+            <img src = "logo1.jpg" width="50px" height="50px">
+            <img src = "logo1.jpg" width="50px" height="50px">
+            </div>
+            <div class="names">
+          <ul>
+          </ul>
+            </div>
+          </div>
+        </section>
+        <section class="usernames-container">
+          <div class="title"><p4>Usernames</p4></div>
+          <div class="usernames">
+          <ul>
+          </ul>
+        </div>
+        </section>
+        <section class="emails-container">
+        <div class="title"><p4>Emails</p4></div>
+        <div class="emails">
+          <ul>
+          </ul>
+        </div>
+        </section>
+        <section class="phones-container">
+          <div class="title"><p4>Phone numbers</p4></div>
+        <div class="phones">
+          <ul>
+          </ul>
+        </div>
+        </section>
+        <section class="websites-container">
+          <div class="websites-title"><p4>Websites</p4></div>
+        <div class="websites">
+          <ul>
+          </ul>
+        </div>
+        </section>
         </section>
       </article>
       <script src ="main.js"></script>
